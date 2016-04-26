@@ -193,7 +193,7 @@ legend.update = function (props) {
       to = grades2[i + 1];
       labels.push(
       '<i style="background:' + getColor(from) + '"></i> ' +
-      checkNull(from) + (to ? '&ndash;' + (to).toFixed(to) : '+'));
+      checkNull(from) + (to ? '&ndash;' + checkNull(to) : '+'));
     } else if (tabnum.localeCompare("3") == 0){
       from = grades3[i];
       to = grades3[i + 1];
@@ -205,13 +205,13 @@ legend.update = function (props) {
       to = grades4[i + 1];
       labels.push(
       '<i style="background:' + getColor(from) + '"></i> ' +
-      (from*100).toFixed(1) + (to ? '&ndash;' + (to*100).toFixed(1) : '+'));
+      checkNull(from) + (to ? '&ndash;' + checkNull(to) : '+'));
     } else if (tabnum.localeCompare("5") == 0){
       from = grades5[i];
       to = grades5[i + 1];
       labels.push(
       '<i style="background:' + getColor(from) + '"></i> ' +
-      (from*100).toFixed(1) + (to ? '&ndash;' + (to*100).toFixed(1) : '+'));
+      checkNull(from) + (to ? '&ndash;' + checkNull(to) : '+'));
     } else {
       from = 0;
       to = 0;
