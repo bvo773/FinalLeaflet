@@ -249,12 +249,12 @@ $.getJSON("NBond.geojson", function (data) {
     style: style,
     onEachFeature: function( feature, layer) {
       layer.on({
-        mouseover: function (e) {
-          var layer = e.target;
+        //mouseover: function (e) {
+          //var layer = e.target;
          // var popupText = "<b>" + feature.properties.name + "</b>"   // Popup text: link to town profile
          //+ "<br><a href='" + feature.properties.profile + "'>Town Profile</a>";
-          layer.bindPopup(popupText);
-          layer.setStyle({
+          //layer.bindPopup(popupText);
+          //layer.setStyle({
             weight: 5,
             color: '#666',
             dashArray: '',
