@@ -252,7 +252,7 @@ $.getJSON("NBond.geojson", function (data) {
         mouseover: function (e) {
           var layer = e.target;
           var popupText = "<b>" + feature.properties.name + "</b>";   // Popup text: link to town profile
-         //+ "<br><a href='" + feature.properties.profile + "'>Town Profile</a>";
+         + "<br><a href='" + feature.properties.profile + "'>Town Profile</a>";
           layer.bindPopup(popupText);
           layer.setStyle({
             weight: 5,
