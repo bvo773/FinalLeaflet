@@ -139,7 +139,7 @@ info.update = function (props) {
     var pAsian = props.properties[tabnum];
     this._div.innerHTML = '<h4>Asian</h4>' +  (props ?
         'Count: ' + checkNull(props.properties.Asian) + '<br />' + '% of Asian Arrested: ' + checkNull(props.properties.AP) +'<br />' +
-        'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'Population: ' + checkNull(props.properties.AsianAlone)
+        'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'Population: ' + checkNull(props.properties.AsianAlone) + '<br />' + 'Average bond: ' + checkNull(props.properties.TotalAbond) + '<br />' + 'White Pop.: ' + checkNull(props.properties.WhiteAlone) + '<br />' + 'Black Pop.: ' + checkNull(props.properties.BlackAlone) +'<br />' + 'Hispanic Pop.: ' + checkNull(props.properties.HispanicAlone) 
         : 'Hover over a town');
   } else if(tabnum.localeCompare("3") == 0){
     var pHispanic = props.properties[tabnum];
