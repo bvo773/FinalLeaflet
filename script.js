@@ -181,7 +181,7 @@ legend.onAdd = function (map) {
 //Customize the legend for each tab
 legend.update = function (props) {
   var length = 5,
-    grades2 = [30, 35, 39, 43, 47],
+    grades2 = [.03, .05, 1, 5, 10],
     grades3 = [25000, 46000, 66000, 86000, 106000],
     grades4 = [0.01, 0.08, 0.15, 0.22, 0.29],
     grades5 = [0.01, 0.056, 0.066, 0.076, 0.086],
