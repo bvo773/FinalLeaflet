@@ -78,10 +78,10 @@ function getColor(d) {
     }
   } else if(tabnum.localeCompare("3") == 0){
     if (d > -1) {
-      return d > 5  ? '#FFE699' :
-      d > 1  ? '#FDD976' :
+      return d > 5  ? '#F6AA00' :
+      d > 1  ? '#F8D824' :
       d > .05   ? '#FFD54F' :
-      d > .02   ? '#F8B824' :
+      d > .02   ? '#FDD976' :
       '#F6AA00';
     } else {
       return "#ffffff";
