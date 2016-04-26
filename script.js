@@ -137,25 +137,25 @@ info.onAdd = function (map) {
 info.update = function (props) {
   if(tabnum.localeCompare("2") == 0){
     var pAsian = props.properties[tabnum];
-    this._div.innerHTML = '<h4>Asian</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Statistics</h4>' +  (props ?
        'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.Asian) + '<br />' + '% of Asian Arrested: ' + checkNull(props.properties.AP) +'<br />' +
         'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'Asian Population: ' + checkNull(props.properties.AsianAlone) + '<br />' + 'Average bond: ' + checkNull(props.properties.TotalAbond) + '<br />' + 'White Pop.: ' + checkNull(props.properties.WhiteAlone) + '<br />' + 'Black Pop.: ' + checkNull(props.properties.BlackAlone) +'<br />' + 'Hispanic Pop.: ' + checkNull(props.properties.Hispanicalone) 
         : 'Hover over a town');
   } else if(tabnum.localeCompare("3") == 0){
     var pHispanic = props.properties[tabnum];
-    this._div.innerHTML = '<h4>Hispanic</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Statistics</h4>' +  (props ?
         'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.Hispanic) + '<br />' + '% of Hispanic Arrested: ' + checkNull(props.properties.AP) +'<br />' +
         'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'Hispanic Population: ' + checkNull(props.properties.Hispanicalone) + '<br />' + 'Average bond: ' + checkNull(props.properties.TotalHBond) + '<br />' + 'White Pop.: ' + checkNull(props.properties.WhiteAlone) + '<br />' + 'Black Pop.: ' + checkNull(props.properties.BlackAlone) +'<br />' + 'Asian Pop.: ' + checkNull(props.properties.AsianAlone) 
         : 'Hover over a town');
   } else if(tabnum.localeCompare("4") == 0){
     var pWhite = props.properties[tabnum];
-    this._div.innerHTML = '<h4>People in Poverty</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Statistics</h4>' +  (props ?
         'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.White) + '<br />' + '% of White Arrested: ' + checkNull(props.properties.WP) +'<br />' +
         'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'White Population: ' + checkNull(props.properties.WhiteAlone) + '<br />' + 'Average bond: ' + checkNull(props.properties.TotalWBond) + '<br />' + 'Asian Pop.: ' + checkNull(props.properties.AsianAlone) + '<br />' + 'Black Pop.: ' + checkNull(props.properties.BlackAlone) +'<br />' + 'Hispanic Pop.: ' + checkNull(props.properties.Hispanicalone) 
         : 'Hover over a town');
   } else if(tabnum.localeCompare("5") == 0){
     var pBlack = props.properties[tabnum];
-    this._div.innerHTML = '<h4>Unemployment Rate</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Statistics</h4>' +  (props ?
         'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.Black) + '<br />' + '% of Black Arrested: ' + checkNull(props.properties.BP) +'<br />' +
         'PerCapita: ' + checkNull(props.properties[tabnum]) + '<br />' + 'Black Population: ' + checkNull(props.properties.BlackAlone) + '<br />' + 'Average bond: ' + checkNull(props.properties.TotalBbond) + '<br />' + 'White Pop.: ' + checkNull(props.properties.WhiteAlone) + '<br />' + 'Asian Pop.: ' + checkNull(props.properties.AsianAlone) +'<br />' + 'Hispanic Pop.: ' + checkNull(props.properties.Hispanicalone) 
         : 'Hover over a town');
