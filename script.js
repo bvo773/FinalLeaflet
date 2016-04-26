@@ -193,7 +193,7 @@ legend.update = function (props) {
       to = grades2[i + 1];
       labels.push(
       '<i style="background:' + getColor(from) + '"></i> ' +
-      (from).toFixed(0) + (to ? '&ndash;' + (to-1).toFixed(0) : '+'));
+      checkNull(from) + (to ? '&ndash;' + (to).toFixed(to) : '+'));
     } else if (tabnum.localeCompare("3") == 0){
       from = grades3[i];
       to = grades3[i + 1];
