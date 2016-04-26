@@ -182,9 +182,9 @@ legend.onAdd = function (map) {
 legend.update = function (props) {
   var length = 5,
     grades2 = [.03, .05, 1, 5, 10],
-    grades3 = [25000, 46000, 66000, 86000, 106000],
-    grades4 = [0.01, 0.08, 0.15, 0.22, 0.29],
-    grades5 = [0.01, 0.056, 0.066, 0.076, 0.086],
+    grades3 = [.02, .05, 1, 5, 10],
+    grades4 = [.2, .5, 5, 12, 15],
+    grades5 = [.05, 1, 5, 15, 20],
     labels = [],
     from, to;
   for (var i = 0; i < length; i++) {
