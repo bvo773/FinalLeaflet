@@ -82,7 +82,7 @@ function getColor(d) {
       d > 1  ? '#F8D824' :
       d > .05   ? '#FFD54F' :
       d > .02   ? '#FDD976' :
-      '#F6AA00';
+      '#FFE699';
     } else {
       return "#ffffff";
     }
