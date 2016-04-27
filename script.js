@@ -68,41 +68,41 @@ function getColor(d) {
   console.log(d);
   if(tabnum.localeCompare("2") == 0){
     if (d > -1) {
-      return d > 12.5  ? '#F6AA00' :
-      d > .65  ? '#F8B824' :
-      d > .2   ? '#FFD54F' :
-      d > 0.1   ? '#FDD976' :
-      '#FFE699';
+      return d > 12.5  ? '#a63603' :
+      d > .65  ? '#e6550d' :
+      d > .2   ? '#fd8d3c' :
+      d > 0.1   ? '#fdbe85' :
+      '#feedde';
     } else {
       return "#ffffff";
     }
   } else if(tabnum.localeCompare("3") == 0){
     if (d > -1) {
-      return d > 5.8  ? '#feedde' :
-      d > .57  ? '#fdbe85' :
+      return d > 5.8  ? '#a63603' :
+      d > .57  ? '#e6550d' :
       d > .33   ? '#fd8d3c' :
-      d > 0.1   ? '#e6550d' :
-      '#a63603';
+      d > 0.1   ? '#fdbe85' :
+      '#feedde';
     } else {
       return "#ffffff";
     }
   } else if(tabnum.localeCompare("4") == 0){
     if (d > -1) {
-      return d > 12  ? '#feedde' :
-      d > .62  ? '#fdbe85' :
+      return d > 12  ? '#a63603' :
+      d > .62  ? '#e6550d' :
       d > .37   ? '#fd8d3c' :
-      d > .1  ? '#e6550d' :
-      '#a63603';
+      d > .1  ? '#fdbe85' :
+      '#feedde';
     } else {
       return "#ffffff";
     }
   } else if(tabnum.localeCompare("5") == 0){
     if (d > -1) {
-      return d > 36  ? '#feedde' :
-      d > 5  ? '#fdbe85' :
+      return d > 36  ? '#a63603' :
+      d > 5  ? '#e6550d' :
       d > 2   ? '#fd8d3c' :
-      d > 1   ? '#e6550d' :
-      '#a63603';
+      d > 1   ? '#fdbe85' :
+      '#feedde';
     } else {
       return "#ffffff";
     }
