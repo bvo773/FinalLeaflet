@@ -71,7 +71,7 @@ function getColor(d) {
       return d > 12.5  ? '#F6AA00' :
       d > .65  ? '#F8B824' :
       d > .2   ? '#FFD54F' :
-      d > 0   ? '#FDD976' :
+      d > 0.1   ? '#FDD976' :
       '#FFE699';
     } else {
       return "#ffffff";
@@ -81,7 +81,7 @@ function getColor(d) {
       return d > 5.8  ? '#F6AA00' :
       d > .57  ? '#F8D824' :
       d > .33   ? '#FFD54F' :
-      d > 0   ? '#FDD976' :
+      d > 0.1   ? '#FDD976' :
       '#FFE699';
     } else {
       return "#ffffff";
@@ -91,7 +91,7 @@ function getColor(d) {
       return d > 12  ? '#F6AA00' :
       d > .62  ? '#F8B824' :
       d > .37   ? '#FFD54F' :
-      d > 0  ? '#FDD976' :
+      d > 0.1  ? '#FDD976' :
       '#FFE699';
     } else {
       return "#ffffff";
@@ -181,9 +181,9 @@ legend.onAdd = function (map) {
 //Customize the legend for each tab
 legend.update = function (props) {
   var length = 4,
-    grades2 = [0, .2, .65, 12.5],
-    grades3 = [.0, .33, .57, 5.8],
-    grades4 = [0, .37, .62, 12],
+    grades2 = [0.1, .2, .65, 12.5],
+    grades3 = [0.1, .33, .57, 5.8],
+    grades4 = [0.1, .37, .62, 12],
     grades5 = [1, 2, 5, 36],
     labels = [],
     from, to;
