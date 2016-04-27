@@ -107,7 +107,12 @@ function getColor(d) {
       return "#ffffff";
     }
   } else {
-    return '#fdd017';
+    if (d > -1) {
+      return d > 12  ? '#a63603' :
+      d > .62  ? '#e6550d' :
+      d > .37   ? '#fd8d3c' :
+      d > .1  ? '#fdbe85' :
+      '#feedde';
   }
 }
 
