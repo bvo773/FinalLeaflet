@@ -78,7 +78,7 @@ function getColor(d) {
     }
   } else if(tabnum.localeCompare("3") == 0){
     if (d > -1) {
-      return d > 5.84  ? '#F6AA00' :
+      return d > 5.8  ? '#F6AA00' :
       d > .57  ? '#F8D824' :
       d > .33   ? '#FFD54F' :
       d > 0   ? '#FDD976' :
@@ -181,10 +181,10 @@ legend.onAdd = function (map) {
 //Customize the legend for each tab
 legend.update = function (props) {
   var length = 4,
-    grades2 = [.2, .5, 1, 5],
-    grades3 = [.2, .5, 1, 5],
-    grades4 = [.2, .5, 5, 12],
-    grades5 = [.5, 1, 5, 15],
+    grades2 = [0, .2, .65, 12.5],
+    grades3 = [.0, .33, .57, 5.8],
+    grades4 = [0, .37, .62, 12],
+    grades5 = [1, 2, 5, 36],
     labels = [],
     from, to;
   for (var i = 0; i < length; i++) {
