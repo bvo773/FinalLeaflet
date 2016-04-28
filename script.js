@@ -114,9 +114,7 @@ function getColor(d) {
       d > 1   ? '#fdbe85' :
       '#feedde';
     }
-  } else {
-    return '#fdd017';
-  }
+  } 
 }
 
 //Set style for the map
