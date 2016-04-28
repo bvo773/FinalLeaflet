@@ -2,6 +2,7 @@
 // See Leaflet tutorial http://leafletjs.com/examples/map-panes.html
 // template by http://github.com/jackdougherty/leaflet-map/
 var tabnum = "0";
+
 geoJsonLayer.setStyle(style);
 legend.update(tabnum);
 resetAttribute(tabnum);
