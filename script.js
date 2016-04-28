@@ -171,6 +171,11 @@ info.update = function (props) {
         'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.Count)
          + '<br />' + 'Asian Arrested: ' + checkNull(props.properties.Asian) + '<br />' + 'Black Arrested: ' + checkNull(props.properties.Black) + '<br />'+ 'Hispanic Arrested: ' + checkNull(props.properties.Hispanic) + '<br />'+ 'Population: ' + checkNull(props.properties.Population) + '<br />'+'Bond Average: ' + checkNull(props.properties.TotalAveB)
         : 'Hover over a town');
+  }else {
+    this._div.innerHTML = '<h4>Number of People Arrest</h4>' +  (props ?
+        'Town: ' + checkNull(props.properties.town) + '<br />' + 'Count: ' + checkNull(props.properties.Count)
+         + '<br />' + 'Asian Arrested: ' + checkNull(props.properties.Asian) + '<br />' + 'Black Arrested: ' + checkNull(props.properties.Black) + '<br />'+ 'Hispanic Arrested: ' + checkNull(props.properties.Hispanic) + '<br />'+ 'Population: ' + checkNull(props.properties.Population) + '<br />'+'Bond Average: ' + checkNull(props.properties.TotalAveB)
+        : 'Hover over a town');
   }
 };
 
