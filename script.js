@@ -115,7 +115,7 @@ function getColor(d) {
       '#feedde';
     }
   } else {
-    return '#fdd017';
+    return;
   }
 }
 
