@@ -313,3 +313,13 @@ $(".toolItem").click(function() {
   legend.update(tabnum);
   resetAttribute(tabnum);
 });
+
+function init() {
+  tabnum = "1";
+  geoJsonLayer.setStyle(style);
+  legend.update(tabnum);
+  resetAttribute(tabnum);
+}
+
+init();
+
