@@ -44,7 +44,7 @@ var controlLayers = L.control.layers( null, null, {
 
 //Reset the reference each time the user changes tab
 function resetAttribute (tabnum){
-  map.attributionControl.removeAttribution ("Reference");
+  //map.attributionControl.removeAttribution ("Reference");
   if (tabnum.localeCompare("1") == 0) {
     map.attributionControl
     .setPrefix('Reference:' + '<br />' + 'Capital Workforce Partners 2014-15 Program Year' + '<br />' + 'View <a href="http://github.com/ngocdo67/leaflet-map-panes">code on GitHub</a>, created with' + '<br />' +  '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
