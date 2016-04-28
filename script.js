@@ -3,10 +3,13 @@
 // template by http://github.com/jackdougherty/leaflet-map/
 var tabnum = "0";
 
-geoJsonLayer.setStyle(style);
-legend.update(tabnum);
-resetAttribute(tabnum);
-  
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    geoJsonLayer.setStyle(style);
+    legend.update(tabnum);
+    resetAttribute(tabnum);
+});
+
 // set up the map center and zoom level
 var map = L.map('map', {
   center: [41.5, -72.7], // [41.5, -72.7] for Connecticut; [41.76, -72.67] for Hartford county or city
