@@ -66,7 +66,16 @@ function resetAttribute (tabnum){
 //Decide the color for the polygons for each tab
 function getColor(d) {
   console.log(d);
-  if(tabnum.localeCompare("2") == 0){
+  if(tabnum.localeCompare("1") == 0){
+    if (d > -1) {
+      return d > 36  ? '#a63603' :
+      d > 5  ? '#e6550d' :
+      d > 2   ? '#fd8d3c' :
+      d > 1   ? '#fdbe85' :
+      '#feedde';
+    }
+  } 
+  else if(tabnum.localeCompare("2") == 0){
     if (d > -1) {
       return d > 12.5  ? '#a63603' :
       d > .65  ? '#e6550d' :
@@ -105,14 +114,6 @@ function getColor(d) {
       '#feedde';
     } else {
       return "#ffffff";
-    }
-  } else if(tabnum.localeCompare("1") == 0){
-    if (d > -1) {
-      return d > 36  ? '#a63603' :
-      d > 5  ? '#e6550d' :
-      d > 2   ? '#fd8d3c' :
-      d > 1   ? '#fdbe85' :
-      '#feedde';
     }
   } 
 }
