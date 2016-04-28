@@ -73,9 +73,10 @@ function getColor(d) {
       d > 2   ? '#fd8d3c' :
       d > 1   ? '#fdbe85' :
       '#feedde';
+    } else {
+      return "#ffffff";
     }
-  } 
-  else if(tabnum.localeCompare("2") == 0){
+  } else if(tabnum.localeCompare("2") == 0){
     if (d > -1) {
       return d > 12.5  ? '#a63603' :
       d > .65  ? '#e6550d' :
